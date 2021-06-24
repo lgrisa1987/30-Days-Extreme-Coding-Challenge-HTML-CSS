@@ -129,17 +129,115 @@ body {
         border-radius: .8rem;
         -webkit-box-shadow: inset;
         box-shadow: inset .2rem .2rem .4rem #d1d9e6,
-        -.2rem .2rem .4rem #f9f9f9;
+        -.2rem -.2rem .4rem #f9f9f9;
 
         &:focus {
             -webkit-box-shadow: inset .4rem .4rem .4rem #d1d9e6,
                 -.4rem .4rem .4rem #f9f9f9;
             box-shadow: inset .4rem .4rem .4rem #d1d9e6,
-                -.4rem .4rem .4rem #f9f9f9;
+                -.4rem -.4rem .4rem #f9f9f9;
         }
     }
 
     &__span {
         margin: 3rem 0 1.2rem;
+    }
+
+    &__link {
+        color: #181818;
+
+        font: {
+            size: 1.5rem;
+
+        }
+
+        margin-top: 2.5rem;
+        border-bottom: .1rem solid #a0a5a8;
+        line-height: 2;
+    }
+}
+
+.title {
+    font: {
+        size: 3.4rem;
+        weight: 700;
+    }
+
+    line-height: 3;
+    color: #181818;
+}
+
+.button {
+    width: 18rem;
+    height: 5rem;
+    border-radius: 2.5rem;
+    margin-top: 5rem;
+
+    font: {
+        size: 1.4rem;
+        weight: 700;
+    }
+
+    letter-spacing: .115rem;
+    background-color: #4b70e2;
+    color: #f9f9f9;
+    -webkit-box-shadow: .8rem 8rem 1.6rem;
+    box-shadow: .8rem .8rem 1.6rem #d1d9e6,
+    -.8rem -.8rem 1.6rem #d9d9d9;
+    border: none;
+    outline: none;
+}
+
+.a-container,
+.b-container {
+    left: calc(100% - 60rem);
+}
+
+.a-container {
+    z-index: 100;
+}
+
+.b-container {
+    z-index: 0;
+}
+
+.switch {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 40rem;
+    padding: 5rem;
+    z-index: 200;
+    -webkit-transition: 1.25s;
+    transition: 1.25s;
+    background-color: #ecf0f3;
+    overflow: hidden;
+    -webkit-box-shadow: .4rem .4rem 1rem #d1d9e6, -.4rem -4rem 1rem #f9f9f9;
+    box-shadow: .4rem .4rem 1rem #d1d9e6, -.4rem -4rem 1rem #f9f9f9;
+
+    &__circle {
+        position: absolute;
+        width: 50rem;
+        height: 50rem;
+        border-radius: 50%;
+        background-color: #ecf0f3;
+        -webkit-box-shadow: inset .8rem .8rem 1.2rem #d1d9e6,
+            -.8rem -.8rem 1.2rem #f9f9f9;
+        box-shadow: inset .8rem .8rem 1.2rem #d1d9e6,
+            -.8rem -.8rem 1.2rem #f9f9f9;
+        bottom: -60%;
+        left: -60%;
+        -webkit-transition: 1.25s;
+        transition: 1.25s;
     }
 }
